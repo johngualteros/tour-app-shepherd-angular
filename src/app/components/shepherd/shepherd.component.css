@@ -1,0 +1,145 @@
+/*Custom fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;900&family=Nunito+Sans:opsz,wght@6..12,900;6..12,1000&family=Rubik&display=swap');
+
+.button-primary, .button-secondary {
+  padding: 10px 20px;
+  color: var(--light-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  &:hover {
+    background-color: var(--primary-color-light);
+  }
+}
+
+.button-lg-tertiary {
+  padding: 20px 30px;
+  color: var(--light-color);
+  background-color: var(--primary-color-light);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 24px;
+  &:hover {
+    background-color: var(--primary-color);
+  }
+}
+
+.button-secondary {
+  background-color: var(--dark-color);
+  &:hover {
+    /*background darker*/
+    background-color: #1a1a1a;
+  }
+}
+
+
+.container {
+  width: 100%;
+  height: auto;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  padding: 20px;
+  .container--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    background-color: var(--light-color);
+    & h1 {
+      font-size: 2rem;
+      font-weight: 900;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+  }
+  .container--main {
+    width: 80%;
+    margin: 0 auto;
+    height: 80vh;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 40px;
+    position: relative;
+    & :nth-of-type(1) {
+      & h1 {
+        font-size: 4rem;
+        font-weight: 1000;
+        margin: 0;
+        padding: 0;
+        font-family: 'Nunito Sans', sans-serif;
+        color: var(--primary-color);
+      }
+
+      & p {
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 0;
+        font-family: 'Inter', sans-serif;
+        color: var(--dark-color);
+        letter-spacing: 5px;
+        margin: 20px 0;
+      }
+    }
+    & :nth-of-type(2) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  & .container--my--services {
+    width: 80%;
+    margin: 0 auto;
+    height: 30vh;
+    padding: 20px;
+    & h1 {
+      font-size: 4rem;
+      font-weight: 1000;
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito Sans', sans-serif;
+      color: var(--primary-color-light);
+      text-align: center;
+    }
+    & .container--services {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      background-color: var(--light-color);
+      & div {
+        width: 30%;
+        height: 100%;
+        background-color: var(--light-color);
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid var(--primary-color-light);
+        & h2 {
+          font-size: 1.5rem;
+          font-weight: 900;
+          margin: 0;
+          padding: 0;
+          font-family: sans-serif;
+          color: var(--dark-color);
+        }
+        & p {
+          padding: 0;
+          font-family: 'Inter', sans-serif;
+          color: var(--dark-color);
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+}
